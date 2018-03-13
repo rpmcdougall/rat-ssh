@@ -15,6 +15,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Gradle: io.ratpack:ratpack-core:1.5.4" level="project" />
     <orderEntry type="library" name="Gradle: io.ratpack:ratpack-groovy:1.5.4" level="project" />
+    <orderEntry type="library" name="Gradle: com.jcraft:jsch:0.1.53" level="project" />
     <orderEntry type="library" name="Gradle: io.ratpack:ratpack-exec:1.5.4" level="project" />
     <orderEntry type="library" name="Gradle: io.netty:netty-codec-http:4.1.22.Final" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.slf4j:slf4j-simple:1.7.25" level="project" />
