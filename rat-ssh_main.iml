@@ -16,10 +16,11 @@
     <orderEntry type="library" name="Gradle: io.ratpack:ratpack-core:1.5.4" level="project" />
     <orderEntry type="library" name="Gradle: io.ratpack:ratpack-groovy:1.5.4" level="project" />
     <orderEntry type="library" name="Gradle: com.jcraft:jsch:0.1.53" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.ivy:ivy:2.3.0" level="project" />
     <orderEntry type="library" name="Gradle: io.ratpack:ratpack-exec:1.5.4" level="project" />
     <orderEntry type="library" name="Gradle: io.netty:netty-codec-http:4.1.22.Final" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.slf4j:slf4j-simple:1.7.25" level="project" />
     <orderEntry type="library" name="Gradle: io.netty:netty-handler:4.1.22.Final" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.slf4j:slf4j-simple:1.7.25" level="project" />
     <orderEntry type="library" name="Gradle: com.github.ben-manes.caffeine:caffeine:2.4.0" level="project" />
     <orderEntry type="library" name="Gradle: org.javassist:javassist:3.19.0-GA" level="project" />
     <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.9.4" level="project" />
@@ -47,5 +48,104 @@
     <orderEntry type="library" name="Gradle: io.netty:netty-resolver:4.1.22.Final" level="project" />
     <orderEntry type="library" name="Gradle: javax.inject:javax.inject:1" level="project" />
     <orderEntry type="library" name="Gradle: aopalliance:aopalliance:1.0" level="project" />
+    <orderEntry type="module-library">
+      <library name="Grab:sshoogr-0.9.26.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.groovy/grapes/com.aestasit.infrastructure.sshoogr/sshoogr/jars/sshoogr-0.9.26.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Grab:jewelcli-0.8.9.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.groovy/grapes/com.lexicalscope.jewelcli/jewelcli/jars/jewelcli-0.8.9.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Grab:commons-io-1.4.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.groovy/grapes/commons-io/commons-io/jars/commons-io-1.4.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Grab:jcl-over-slf4j-1.7.19.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.groovy/grapes/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.19.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Grab:jsch-0.1.53.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.groovy/grapes/com.jcraft/jsch/jars/jsch-0.1.53.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Grab:logback-classic-1.1.3.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.groovy/grapes/ch.qos.logback/logback-classic/jars/logback-classic-1.1.3.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Grab:logback-core-1.1.3.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.groovy/grapes/ch.qos.logback/logback-core/jars/logback-core-1.1.3.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Grab:slf4j-api-1.7.7.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.groovy/grapes/org.slf4j/slf4j-api/jars/slf4j-api-1.7.7.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Grab:jansi-1.14.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.groovy/grapes/org.fusesource.jansi/jansi/jars/jansi-1.14.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Grab:commons-codec-1.9.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.groovy/grapes/commons-codec/commons-codec/jars/commons-codec-1.9.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Grab:ivy-2.3.0.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.groovy/grapes/org.apache.ivy/ivy/jars/ivy-2.3.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>

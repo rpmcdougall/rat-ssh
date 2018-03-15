@@ -14,6 +14,7 @@
     <orderEntry type="library" name="Gradle: io.ratpack:ratpack-core:1.5.4" level="project" />
     <orderEntry type="library" name="Gradle: io.ratpack:ratpack-groovy:1.5.4" level="project" />
     <orderEntry type="library" name="Gradle: com.jcraft:jsch:0.1.53" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.ivy:ivy:2.3.0" level="project" />
     <orderEntry type="library" name="Gradle: io.ratpack:ratpack-test:1.5.4" level="project" />
     <orderEntry type="library" name="Gradle: io.ratpack:ratpack-groovy-test:1.5.4" level="project" />
     <orderEntry type="library" name="Gradle: org.spockframework:spock-core:1.0-groovy-2.4" level="project" />

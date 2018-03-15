@@ -1,8 +1,11 @@
+@Grab('org.apache.ivy:ivy:2.3.0')
+@Grab('com.aestasit.infrastructure.sshoogr:sshoogr:0.9.26')
+import static com.aestasit.infrastructure.ssh.DefaultSsh.*
 import  ratpack.groovy.template.MarkupTemplateModule
 import static groovy.json.JsonOutput.toJson
 import static ratpack.groovy.Groovy.groovyMarkupTemplate
 import static ratpack.groovy.Groovy.ratpack
-import  com.jcraft.jsch.*
+//import  com.jcraft.jsch.*
 
 
 
@@ -18,52 +21,45 @@ ratpack {
     handlers {
         get {
             render groovyMarkupTemplate("index.gtpl", title: "My Ratpack App")
+            files { dir "public" }
         }
-
-
-
-
         get('test') {
             def reqCommand = request.queryParams.cmd
             def reqHost = request.queryParams.rhost
+            def cmdResponse
+            remoteSession{
+                host = 'localhost'
+                username = 'vagrant'
+                password = 'vagrant'
+                port = 2222
+                trustUnknownHosts = true
+                def result = exec(command: reqCommand, failOnError: false, showOutput: false)
+                if (result.exitStatus == 1) {
+                    result.output.eachLine { line ->
 
-            java.util.Properties config = new java.util.Properties()
-            config.put "StrictHostKeyChecking", "no"
-
-            JSch ssh = new JSch()
-            Session sess = ssh.getSession "vagrant", reqHost, 2222
-
-            sess.with {
-                setConfig config
-                setPassword "vagrant"
-                connect()
-                Channel chan = openChannel("exec")
-                ChannelExec ce = (ChannelExec) chan
-                ce.setCommand(reqCommand)
-                ce.connect()
-                BufferedReader reader = new BufferedReader(new InputStreamReader(ce.getInputStream()));
-                String line
-                String cmdResponse
-
-                while ((line = reader.readLine()) != null) {
-                    cmdResponse = line.toString()
+                        if (line.contains('WARNING')) {
+                            throw new RuntimeException("Warning!!!")
+                        }
+                    }
+                } else {
+                    cmdResponse = result.output.trim()
                 }
-
+            }
+//
                 def jsonresponse = new sendBack(
                         senthost: reqHost,
                         cmdresponse: cmdResponse
                 )
 
                 render toJson(jsonresponse)
-                ce.disconnect()
-                sess.disconnect()
+
             }
 
         }
-        files { dir "public" }
+
     }
 
-}
+
 class sendBack {
   String senthost
   String cmdresponse
